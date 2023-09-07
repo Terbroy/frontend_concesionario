@@ -15,7 +15,7 @@ function LoginCard() {
   const submit = (data) => {
     axios
       .post(
-        `https://concesionarioback-production.up.railway.app/api/v1/auth/login`,
+        `https://sincoayf-concesionario-api.up.railway.app/api/v1/auth/login/`,
         data
       )
       .then((res) => {
