@@ -1,0 +1,45 @@
+.register{
+    background: rgb(162, 130, 238);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.register form{
+    background: white;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__selection{
+    background-color: rgb(162, 130, 238);
+    border: transparent;
+    margin: auto;
+    width:  max-content;
+    padding:  .5rem 2rem;
+    border-radius: 7px;
+    color: #ffff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.btn.btn-primary, .btn.btn-secondary{
+    background-color: rgb(162, 130, 238);
+    border: transparent;
+    margin: auto;
+    width: max-content;
+    padding:  .5rem 2rem;
+}
+
+.btn.btn-primary:hover, .form__selection:hover{
+    background-color: rgb(132, 88, 234);
+    border: transparent;
+}

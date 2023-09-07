@@ -1,0 +1,75 @@
+/* .productCard {
+    background-color: aquamarine;
+    width: 200px;
+    height: 350px;
+} */
+
+ div .card{
+    background-color: #ffffff;
+    border: 1px #e6e6e6 solid ;
+    object-fit: contain;
+    width: 260px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .3s;
+}
+
+div .card:hover {
+    box-shadow: 0 15px 20px #b8b7ba4d;
+    cursor: pointer;
+}
+
+.card img{
+    /* background-color: #f0fffd; */
+    width: 100%;
+    height: 180px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: .5px;
+    position: relative;
+}
+
+
+.card-body p{
+    margin: 0;
+}
+
+.h5{
+    font-size: 3rem ;
+}
+
+.card-body__registerDate {
+    width: max-content;
+    position: absolute;
+    bottom: 10px;
+    /* background-color: aqua; */
+    color: #c3c2c2;
+}
+
+.card-body__registerDate:hover {
+    color: #14043f;
+}
+
+.card-body__price{
+    /* background-color:#8c84eb; */
+    color: #14043f;
+    width: max-content;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+div .card  b{
+    font-weight: 500;
+}

@@ -1,0 +1,14 @@
+.productsList {
+    width: 60%;
+    height: 100%;
+    padding: 5rem 0 12rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: aqua; */
+    gap: 1.5rem;
+}
+
+/* .productsList::-webkit-scrollbar {
+    width: 0;
+} */

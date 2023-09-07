@@ -1,0 +1,79 @@
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.product-detail__carimage.img-fluid{
+    width: 100%;
+    max-width: 800px;
+    margin: auto auto;
+}
+
+.background{
+    background-color: rgba(122, 108, 218, 0.689);
+    padding: 2rem 3rem ;
+    padding-bottom: 4rem;
+}
+
+.product-detail__title{
+    font-size: 3rem;
+    position: relative;
+}
+
+
+ .product-detail__containerinfo{
+    width: 100%;
+    display: flex;
+    gap: 20%;
+    justify-content: space-between;
+ }
+
+ div .product-detail__info.list-group{
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.info__list.list-group-item{
+     background-color: rgb(255, 255, 255)
+ }
+
+.product-detail__carrousel{
+    margin: 4rem 0;
+    overflow-x: scroll;
+}
+
+.product-detail__carrousel::-webkit-scrollbar-thumb{
+    background-color: rgba(144, 130, 238, 0.497);
+    height: 5px;
+    border-radius: 50px;
+}
+
+.product-detail__carrousel::-webkit-scrollbar{
+    color: rgba(144, 130, 238, 0.537);
+    height: 5px;
+}
+
+.carrousel__products{
+   display: flex;
+   gap: 1rem;
+   width: max-content;
+}
+
+ #dropdown-basic-button{
+    background-color: rgb(119, 108, 192);
+    border: solid transparent;
+}
+
+div.dropdown-menu.show{
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: rgb(132, 118, 225);
+    border: transparent;
+}

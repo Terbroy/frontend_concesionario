@@ -1,0 +1,60 @@
+.navbar {
+    background-color: var(--cl-regular);
+    position: absolute;
+    box-shadow: 0px 0px 10px var(--cl-second);
+    outline: 1px solid var(--cl-second);
+    padding: 0;
+    position: fixed;
+}
+
+#navbar__container {
+    /* background-color: aqua; */
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    /* background-color: aqua; */
+}
+
+.navbar__logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--cl-identity);
+    padding: 0;
+}
+
+
+
+.navbar__search {
+    margin-left: 55%;
+    /* background-color: #b6b5b5; */
+}
+
+.navbar__search Form.Control {
+    outline: none;
+    border: none;
+}
+
+/* .navbar__search Form.Control:focus {
+    
+} */
+
+
+.navbar__cuenta {
+    width: 35px;
+    height: 35px;
+    background-color: var(--cl-identity);
+    border-radius: 100%;
+    /* box-shadow: 0 0 7px #b6b5b5; */
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__cuenta > i{
+    color: #fff;
+}
