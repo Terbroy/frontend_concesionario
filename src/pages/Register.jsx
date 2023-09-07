@@ -69,6 +69,7 @@ const Register = () => {
           fechaRegistro: data.fechaRegistro,
         };
         dispatch(createVehicleThunk(newData));
+        console.log("creacion exitosa");
     }else{
       console.log("maximo de vehiculos");
     }
@@ -99,6 +100,7 @@ const Register = () => {
               value={valueType}
               onChange={handleTypeChange}
               className="form__selection"
+              required
               {...register("tipo")}
             >
               <option value="Carro">Carro</option>
@@ -109,6 +111,7 @@ const Register = () => {
               value={valueIsNew}
               onChange={handleStateChange}
               className="form__selection"
+              required
               {...register("esNuevo")}
             >
               <option value={"Nuevo"}>Nuevo</option>
@@ -122,6 +125,7 @@ const Register = () => {
               value={valueModel}
               onChange={handleModelChange}
               className="form__selection"
+              required
               {...register("modelo")}>
                 {
                   prices.map(price=>(
@@ -135,6 +139,7 @@ const Register = () => {
             <Form.Control
               placeholder="Enter color"
               type="text"
+              required
               {...register("color")}
             />
           </Form.Group>
@@ -146,6 +151,7 @@ const Register = () => {
               placeholder="Enter price"
               min={defaultPrice}
               max="250000000"
+              required
               {...register("precio")}
             />
           </Form.Group>
@@ -157,6 +163,7 @@ const Register = () => {
                   max="400"
                   type="number"
                   placeholder="Enter capacity"
+                  required
                   {...register("cilindraje")}
                 />
               </Form.Group>
@@ -167,6 +174,7 @@ const Register = () => {
                   min="0"
                   type="number"
                   placeholder="Enter number"
+                  required
                   {...register("numVelocidades")}
                 />
               </Form.Group>
@@ -179,6 +187,7 @@ const Register = () => {
                 min="1"
                 type="number"
                 placeholder="km"
+                required
                 {...register("kilometraje")}
               />
             </Form.Group>
@@ -187,6 +196,7 @@ const Register = () => {
             <Form.Label>Image</Form.Label>
             <Form.Control
               type="text"
+              required
               {...register("img")}
             />
           </Form.Group>
@@ -195,6 +205,7 @@ const Register = () => {
             <Form.Control
               type="date"
               placeholder="Enter Date"
+              required
               {...register("fechaRegistro")}
             />
           </Form.Group>
